@@ -1,0 +1,14 @@
+def calcular_combinaciones(numero_personajes, tamano_equipo):
+    combinaciones = 1
+    for i in range(tamano_equipo):
+        combinaciones *= (numero_personajes - i)
+        combinaciones //= (i + 1)
+    return combinaciones
+
+
+total_personajes = int(input("Ingrese el número total de personajes disponibles: "))
+tamano_equipo = int(input("Ingrese el tamaño del equipo deseado: "))
+
+
+resultado = calcular_combinaciones(total_personajes, tamano_equipo)
+print("El número total de combinaciones posibles es:", resultado)
