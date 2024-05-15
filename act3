@@ -1,0 +1,15 @@
+def calcular_combinaciones(num_personas, tam_equipo):
+    if num_personas < tam_equipo:
+        return 0  # No se pueden formar equipos si el tamaño del equipo es mayor que el número de personas
+    else:
+        combinaciones = 1
+        for i in range(tam_equipo):
+            combinaciones *= (num_personas - i)
+            combinaciones //= (i + 1)
+        return combinaciones
+
+
+total_personas = 113568
+tamano_equipo = 3
+resultado = calcular_combinaciones(total_personas, tamano_equipo)
+print("El número total de combinaciones posibles es:", resultado)
