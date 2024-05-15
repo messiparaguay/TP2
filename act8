@@ -1,0 +1,5 @@
+mensaje = input("Ingrese el mensaje enigmático tallado en la estatua: ").lower()
+if 'tesoro' in mensaje or 'pista' in mensaje or 'encontrar' in mensaje:
+    print("¡El mensaje podría ser una pista útil para encontrar el tesoro!")
+else:
+    print("El mensaje parece ser una distracción peligrosa.")
