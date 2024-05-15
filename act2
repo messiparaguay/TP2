@@ -1,0 +1,7 @@
+base = 100
+altura = 50
+
+area = base * altura
+
+
+print("El área de la superficie es de", area, "metros cuadrados.")
