@@ -1,0 +1,31 @@
+import random
+
+
+preguntas = [
+    "¿Qué es lo que tiene ojos y no puede ver?",
+    "Tiene dientes pero no puede comer. ¿Qué es?",
+    "Siempre está en la cama, en la mesa y en el suelo, pero nunca duerme. ¿Qué es?",
+    "¿Qué tiene cabeza y no piensa?",
+    "¿Qué es tan ligero como una pluma, pero incluso el más fuerte hombre no puede sostenerlo durante mucho tiempo?"
+]
+respuestas = [
+    "un naipe",
+    "un peine",
+    "una pata",
+    "un clavo",
+    "el aliento"
+]
+
+indice_pregunta = random.randint(0, len(preguntas) - 1)
+pregunta = preguntas[indice_pregunta]
+
+
+print("Adivina la respuesta a la siguiente adivinanza:")
+print(pregunta)
+respuesta = input("Tu respuesta: ").lower()
+
+
+if respuesta == respuestas[indice_pregunta]:
+    print("¡Respuesta correcta! La puerta mágica se abre y los jóvenes pueden avanzar en su búsqueda.")
+else:
+    print("Respuesta incorrecta. La puerta mágica permanece cerrada, ¡intenta nuevamente!")
