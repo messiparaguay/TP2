@@ -1,0 +1,8 @@
+material = input("¿De qué material es el artefacto? (oro/plata/cobre/piedra): ").lower()
+edad = int(input("¿Cuántos años crees que tiene el artefacto? Ingrese un número entero: "))
+peso_kg = float(input("¿Cuál es el peso del artefacto en kilogramos? "))
+
+if material == 'oro' and edad > 100 and peso_kg > 5:
+    print("¡El artefacto podría ser un tesoro oculto!")
+else:
+    print("El artefacto parece ser simplemente un adorno decorativo.")
